@@ -1,0 +1,27 @@
+<mvc:View xmlns:form="sap.ui.layout.form"
+    controllerName="findchildcontrol.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+>
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content >
+                        <form:SimpleForm >
+                            <Label text=" Main Control"></Label>
+                            <Input id="idMain" value="sap.ui.layout.form.SimpleForm"></Input>
+                            <Label text="Enter the Child Control"></Label>
+                            <Input id="idChild"></Input>
+                            <Label text=""></Label>
+                            <Button text="Validate" press="onPress"></Button>
+                            <Label text=""></Label>
+                            <Text id="idMsg"></Text>
+                        </form:SimpleForm>
+                    </content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
